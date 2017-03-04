@@ -2,7 +2,10 @@
 
 Aceso is a Android HotFix by optimizing the AOSP's "InstantRun HotSwap" solution, it is used to fix online bugs without a new APK publish.
 
+[wiki](https://github.com/meili/Aceso/wiki)
+
 [中文说明](README-zh.md)
+
 
 ## Features
 
@@ -14,7 +17,7 @@ Aceso is a Android HotFix by optimizing the AOSP's "InstantRun HotSwap" solution
 
 ## Limitations
 
-- Current not support fixing static function and constructors.
+- Current not support fixing static code block and constructors.
 - Functions that shrinked/inlined by proguard are NOT repariable.
 - Only the Method's body can be fixed.
 
@@ -29,7 +32,7 @@ buildscript {
     }
 
     dependencies {
-         classpath 'com.mogujie.aceso:aceso-build:0.0.1'
+         classpath 'com.mogujie.aceso:aceso-build:0.0.2'
     }
 }
 ```
@@ -72,7 +75,7 @@ buildscript {
     }
 
     dependencies {
-         classpath 'com.mogujie.aceso:aceso-build:0.0.1'
+         classpath 'com.mogujie.aceso:aceso-build:0.0.2'
     }
 }
 ```
